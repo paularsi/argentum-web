@@ -60,7 +60,7 @@ public class FiltraNegociacoesIT {
 	public void iniciaNavegador() {
 		if (System.getProperty("phantomjs.binary.path") != null) {
 			
-			iniciaPhantomJs();
+		//	iniciaPhantomJs(); 
 			
 		} else if (System.getProperty("webdriver.chrome.driver") != null) {
 			
@@ -131,7 +131,7 @@ public class FiltraNegociacoesIT {
 		driver = new ChromeDriver();
 	}
 
-	private void iniciaPhantomJs() {
+	private void iniciaPhantomJs() { 
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setJavascriptEnabled(true);
 		driver = new PhantomJSDriver(dc);
